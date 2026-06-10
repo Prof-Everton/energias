@@ -1,6 +1,6 @@
 // ========== CONFIGURAÇÃO DO JSONBIN.IO ==========
-const JSONBIN_URL = 'https://api.jsonbin.io/v3/b/6a298352f5f4af5e29d8f997'; // Substitua pelo seu ID
-const JSONBIN_KEY = '6a298352f5f4af5e29d8f997'; // Substitua pela sua chave
+const JSONBIN_URL = '6a298352f5f4af5e29d8f997'; // Substitua pelo seu ID
+const JSONBIN_KEY = '$2a$10$yGOnoe1EUipmwj311L6cl.sMZQulA2xrlQqb07R5MaX3WAUFTzwkm'; // Substitua pela sua chave
 
 // Array com os dados das imagens
 const imagens = [
