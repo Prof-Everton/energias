@@ -8,52 +8,39 @@
 </head>
 <body>
 
-    <!-- Cabeçalho do Site -->
     <header>
         <h1>🌿 Energias Renováveis</h1>
         <p>Espaço Digital da Turma de Energias Renováveis — 2ºI CEEP Fazenda Rio Grande</p>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
-        
-        <!-- TOP 3 VOTADOS - DESTAQUE NO TOPO -->
+        <!-- TOP 3 VOTADOS -->
         <section class="top-votados">
             <h2>🏆 Panfletos Mais Votados 🏆</h2>
-            <div id="topVotados" class="top-votados-container">
-                <!-- Gerado via JavaScript -->
-            </div>
+            <div id="topVotados" class="top-votados-container"></div>
         </section>
 
-        <!-- Apresentação da Turma -->
+        <!-- Apresentação -->
         <section class="intro">
             <h2>Sobre Nosso Projeto</h2>
-            <p>Bem-vindo ao nosso mural informativo. Aqui você encontra os panfletos e materiais digitais desenvolvidos pelos alunos do Ensino Médio Técnico. Nosso objetivo é conscientizar a comunidade escolar sobre a importância da transição energética e o funcionamento das principais fontes limpas do planeta.</p>
-            <p style="margin-top: 10px;">✨ <strong>Dica:</strong> Clique em qualquer imagem para ampliá-la e navegue entre os panfletos usando as setas! ✨</p>
-            <p style="margin-top: 10px;">⭐ <strong>Votação:</strong> Vote no seu panfleto preferido! Cada usuário pode votar apenas uma vez. ⭐</p>
+            <p>Bem-vindo ao nosso mural informativo. Aqui você encontra os panfletos e materiais digitais desenvolvidos pelos alunos do Ensino Médio Técnico.</p>
+            <p>✨ <strong>Dica:</strong> Clique em qualquer imagem para ampliá-la! ✨</p>
+            <p>⭐ <strong>Votação:</strong> Vote no seu panfleto preferido! Cada usuário pode votar apenas uma vez. ⭐</p>
         </section>
 
-        <!-- Seção de Ranking de Votos -->
+        <!-- Ranking -->
         <section class="ranking-section">
-            <h2>⭐ Ranking de Votos (Top 5 Mais Votados)</h2>
-            <ul id="rankingVotos" class="ranking-list">
-                <!-- Gerado dinamicamente via JS -->
-            </ul>
-            <!-- Botão Admin (opcional) -->
-            <button id="adminResetBtn" class="admin-btn" style="display: block; margin: 15px auto 0; padding: 8px 20px; background: #ff6b6b; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 0.9em;">
-                🔒 Área do Administrador (Zerar Votações)
-            </button>
+            <h2>⭐ Ranking de Votos (Top 5)</h2>
+            <ul id="rankingVotos" class="ranking-list"></ul>
+            <button id="adminResetBtn" class="admin-btn">🔒 Zerar Votações (Admin)</button>
         </section>
 
-        <!-- Seção Expositiva dos Panfletos -->
-        <h2 class="section-title">📸 Nossos Panfletos Informativos</h2>
-        
-        <div class="grid-panfletos" id="gallery">
-            <!-- As imagens serão inseridas via JavaScript -->
-        </div>
+        <!-- Galeria -->
+        <h2 class="section-title">📸 Nossos Panfletos</h2>
+        <div class="grid-panfletos" id="gallery"></div>
     </main>
 
-    <!-- Modal de ampliação -->
+    <!-- Modal -->
     <div id="modal" class="modal">
         <span class="close-btn">&times;</span>
         <button class="nav-btn prev-btn" id="prevBtn">❮</button>
@@ -62,12 +49,11 @@
         <div class="image-counter" id="imageCounter"></div>
     </div>
 
-    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 — Desenvolvido pela Turma de Energias Renováveis do Ensino Médio</p>
-        <p>🌱 Junte-se a nós nessa jornada por um futuro mais sustentável! 🌱</p>
+        <p>&copy; 2026 — Turma de Energias Renováveis - 2ºI CEEP Fazenda Rio Grande</p>
+        <p>🌱 Um futuro mais sustentável começa com pequenas ações! 🌱</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
