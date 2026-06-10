@@ -5,7 +5,6 @@ const JSONBIN_KEY = '6a298352f5f4af5e29d8f997'; // Substitua pela sua chave
 // Array com os dados das imagens
 const imagens = [
     // Array com os dados das imagens - VERSÃO CORRIGIDA
-const imagens = [
     { src: "panfletos/1.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "Por que é melhor para sua residencia?" },
     { src: "panfletos/2.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "descrição da imagem" },
     { src: "panfletos/comercial.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "descrição da imagem" },
@@ -39,7 +38,6 @@ const imagens = [
     { src: "panfletos/Rebeca.Laura.setorpublico.png_20260513_224012_0000.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "descrição da imagem" },
     { src: "panfletos/Residencial.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "descrição da imagem" },
     { src: "panfletos/Setorpublico.png", tag: "imagem", titulo: "Conservação de Energia", descricao: "descrição da imagem" },
-];
 ];
 
 let votosGlobais = {};
