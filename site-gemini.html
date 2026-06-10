@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energias Renováveis - Galeria Interativa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>🌿 Energias Renováveis</h1>
+        <p>Espaço Digital da Turma de Energias Renováveis — 2ºI CEEP Fazenda Rio Grande</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        
+        <!-- Apresentação da Turma -->
+        <section class="intro">
+            <h2>Sobre Nosso Projeto</h2>
+            <p>Bem-vindo ao nosso mural informativo. Aqui você encontra os panfletos e materiais digitais desenvolvidos pelos alunos do Ensino Médio Técnico. Nosso objetivo é conscientizar a comunidade escolar sobre a importância da transição energética e o funcionamento das principais fontes limpas do planeta.</p>
+            <p style="margin-top: 10px;">✨ <strong>Dica:</strong> Clique em qualquer imagem para ampliá-la e navegue entre os panfletos usando as setas! ✨</p>
+        </section>
+
+        <!-- Seção Expositiva dos Panfletos -->
+        <h2 class="section-title">📸 Nossos Panfletos Informativos</h2>
+        
+        <!-- Insira este bloco dentro do <main>, logo abaixo da section .intro -->
+<section class="ranking-section">
+    <h2>🏆 Painel de Popularidade (Mais Vistos)</h2>
+    <ul id="rankingList" class="ranking-list">
+        <!-- Gerado dinamicamente via JS -->
+    </ul>
+</section>
+
+<!-- Seção Expositiva dos Panfletos (Já existente abaixo) -->
+<h2 class="section-title">📸 Nossos Panfletos Informativos</h2>
+
+        <div class="grid-panfletos" id="gallery">
+            <!-- As imagens serão inseridas via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal de ampliação -->
+    <div id="modal" class="modal">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn" id="prevBtn">❮</button>
+        <button class="nav-btn next-btn" id="nextBtn">❯</button>
+        <img class="modal-content" id="modalImage" alt="Imagem ampliada">
+        <div class="image-counter" id="imageCounter"></div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 — Desenvolvido pela Turma de Energias Renováveis do Ensino Médio</p>
+        <p>🌱 Junte-se a nós nessa jornada por um futuro mais sustentável! 🌱</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
