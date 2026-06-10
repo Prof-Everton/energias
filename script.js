@@ -278,48 +278,6 @@ function configurarEventos() {
     });
 }
 
-// ========== BOTÃO ZERAR CONTADORES (OPCIONAL) ==========
-function adicionarBotaoZerar() {
-    // Verifica se já existe o botão
-    if (document.getElementById('resetBtn')) return;
-    
-    const rankingSection = document.querySelector('.ranking-section');
-    if (rankingSection) {
-        const resetBtn = document.createElement('button');
-        resetBtn.id = 'resetBtn';
-        resetBtn.textContent = '🔄 Zerar Contadores';
-        resetBtn.style.cssText = `
-            display: block;
-            margin: 15px auto 0;
-            padding: 8px 20px;
-            background: #ff6b6b;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 0.9em;
-            transition: all 0.3s ease;
-        `;
-        resetBtn.onmouseover = () => resetBtn.style.background = '#ff5252';
-        resetBtn.onmouseout = () => resetBtn.style.background = '#ff6b6b';
-        
-        resetBtn.onclick = () => {
-            if (confirm('⚠️ Tem certeza que deseja zerar todos os contadores? Esta ação não pode ser desfeita.')) {
-                // Zera todos os contadores
-                Object.keys(cliquesData).forEach(key => {
-                    cliquesData[key] = 0;
-                });
-                salvarContadores();
-                renderizarGaleria();
-                renderizarRanking();
-                console.log('Todos os contadores foram zerados!');
-            }
-        };
-        
-        rankingSection.appendChild(resetBtn);
-    }
-}
-
 // ========== INICIALIZAÇÃO ==========
 function init() {
     console.log('🚀 Inicializando aplicação...');
@@ -327,7 +285,6 @@ function init() {
     
     renderizarGaleria();
     configurarEventos();
-    adicionarBotaoZerar(); // Botão opcional para resetar os contadores
 }
 
 // Inicia quando o DOM estiver pronto
