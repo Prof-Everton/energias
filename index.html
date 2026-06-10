@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energias Renováveis - Galeria Interativa</title>
+    <title>Energias Renováveis - Galeria Interativa com Votação</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -17,30 +17,40 @@
     <!-- Conteúdo Principal -->
     <main>
         
+        <!-- TOP 3 VOTADOS - DESTAQUE NO TOPO -->
+        <section class="top-votados">
+            <h2>🏆 Panfletos Mais Votados 🏆</h2>
+            <div id="topVotados" class="top-votados-container">
+                <!-- Gerado via JavaScript -->
+            </div>
+        </section>
+
         <!-- Apresentação da Turma -->
         <section class="intro">
             <h2>Sobre Nosso Projeto</h2>
             <p>Bem-vindo ao nosso mural informativo. Aqui você encontra os panfletos e materiais digitais desenvolvidos pelos alunos do Ensino Médio Técnico. Nosso objetivo é conscientizar a comunidade escolar sobre a importância da transição energética e o funcionamento das principais fontes limpas do planeta.</p>
             <p style="margin-top: 10px;">✨ <strong>Dica:</strong> Clique em qualquer imagem para ampliá-la e navegue entre os panfletos usando as setas! ✨</p>
+            <p style="margin-top: 10px;">⭐ <strong>Votação:</strong> Vote no seu panfleto preferido! Cada usuário pode votar apenas uma vez. ⭐</p>
+        </section>
+
+        <!-- Seção de Ranking de Votos -->
+        <section class="ranking-section">
+            <h2>⭐ Ranking de Votos (Top 5 Mais Votados)</h2>
+            <ul id="rankingVotos" class="ranking-list">
+                <!-- Gerado dinamicamente via JS -->
+            </ul>
+            <!-- Botão Admin (opcional) -->
+            <button id="adminResetBtn" class="admin-btn" style="display: block; margin: 15px auto 0; padding: 8px 20px; background: #ff6b6b; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 0.9em;">
+                🔒 Área do Administrador (Zerar Votações)
+            </button>
         </section>
 
         <!-- Seção Expositiva dos Panfletos -->
         <h2 class="section-title">📸 Nossos Panfletos Informativos</h2>
         
-        <!-- Insira este bloco dentro do <main>, logo abaixo da section .intro -->
-        <section class="ranking-section">
-            <h2>🏆 Painel de Popularidade (Mais Vistos)</h2>
-            <ul id="rankingList" class="ranking-list">
-                <!-- Gerado dinamicamente via JS -->
-            </ul>
-        </section>
-        
-        <!-- Seção Expositiva dos Panfletos (Já existente abaixo) -->
-        <h2 class="section-title">📸 Nossos Panfletos Informativos</h2>
-        
-                <div class="grid-panfletos" id="gallery">
-                    <!-- As imagens serão inseridas via JavaScript -->
-                </div>
+        <div class="grid-panfletos" id="gallery">
+            <!-- As imagens serão inseridas via JavaScript -->
+        </div>
     </main>
 
     <!-- Modal de ampliação -->
